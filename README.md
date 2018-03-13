@@ -91,9 +91,9 @@ Other third party tools, like [Postman](https://www.getpostman.com), can help th
 ## Datasource for Testing
 By default this application uses H2 database for testing. The datasource is configured in `gcd-ds.xml` file in EAR module. The user does not need to do any change to deploy and run the application.
 
-MySQL server is also supported with the completion of the optional steps mentioned above . To switch to MySQL,
+MySQL is also supported with the completion of the optional steps mentioned above . To switch to MySQL,
 1. Run `mysql/database.sql` to create the database in your MySQL server.
-2. Update the `gcd-ds.xml' file. 
+2. Update the `gcd-ds.xml` file. 
 3. Update the value of `hibernate.hbm2ddl.auto` from `create-drop` to `validate`  in the `persitent.xml` file in EJB module. 
 
 Of course, at anytime the user is able to create a mangaged datasource (`GcdDS`) in the WildFly server and switch to it by removing the `gcd-ds.xml' file in the archive.

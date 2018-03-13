@@ -65,20 +65,20 @@ Add MySQL JDBC driver to WildFly (Optional).
 #### 1. RESTful service
 - Push numbers
 
-   >$ curl -d "i1=value1&i2=value2" -X POST http://localhost:8080/gcd-web/services/source/push
+   >$ curl -d "i1=value1&i2=value2" -X POST http://localhost:8080/gcd/services/source/push
 - Get all numbers added
 
-   >$ curl -X GET http://localhost:8080/gcd-web/services/source/list
+   >$ curl -X GET http://localhost:8080/gcd/services/source/list
   
 Other third party tools, like [Postman](https://www.getpostman.com), can help the testing.
 
 #### 2. Soap service
 - WSDL
 
-   `http://localhost:8080/gcd-web/GcdWS?wsdl`
+   `http://localhost:8080/gcd/services/GcdWS?wsdl`
 - SOAP endpoint
 
-   `http://localhost:8080/gcd-web/GcdWS`
+   `http://localhost:8080/gcd/services/GcdWS`
 
 [SoapUI](https://www.soapui.org) can be used here for testing the operations.
 

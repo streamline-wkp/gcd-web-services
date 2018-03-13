@@ -71,6 +71,7 @@ RemoteSystemsTempFiles/
 *.db
 rebel.xml
 .svn
+.recommenders
  
 # Thumbnails
 ._*

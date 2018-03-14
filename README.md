@@ -43,6 +43,7 @@ Start WildFly 10 in full profile mode. This mode supports JMS.
 
 Create a new JMS queue in a new console.
 > $ ./jboss-cli.sh --connect
+
 > $ jms-queue add --queue-address=gcdQueue --entries=queue/gcd,java:jboss/exported/jms/queue/gcd
 
 Add MySQL JDBC driver to WildFly (Optional).
